@@ -1,0 +1,12 @@
+mapping_default: disabled
+repair_scope_whitelist:
+  - bridge_mode
+  - trauma_stabilize
+  - calibration_check
+export_policies:
+  raw_neural_signatures: "never"
+  summaries: "patient_only"
+advanced_care_directives:
+  allow_natural_death: configurable
+  intervention_thresholds:
+    trauma_mode: conservative
