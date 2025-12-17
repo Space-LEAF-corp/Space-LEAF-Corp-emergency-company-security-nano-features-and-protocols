@@ -1,0 +1,8 @@
+trusted_principals:
+  - Patient
+  - MedicalRole
+untrusted: "*"
+dual_control_required: true
+session_timebox_minutes: 20
+offline_default: true
+proximity_bound_meters: 2
