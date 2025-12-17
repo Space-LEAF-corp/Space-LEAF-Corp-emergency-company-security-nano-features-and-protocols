@@ -1,0 +1,14 @@
+{
+  "$id": "https://spaceleaf.local/schemas/audit_log.schema.json",
+  "type": "object",
+  "properties": {
+    "eventId": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "principal": { "type": "string", "enum": ["Patient", "MedicalRole", "System"] },
+    "action": { "type": "string" },
+    "scope": { "type": "string" },
+    "result": { "type": "string", "enum": ["allowed", "denied", "safe-mode"] },
+    "hash": { "type": "string" }
+  },
+  "required": ["eventId", "timestamp", "principal", "action", "result", "hash"]
+}
