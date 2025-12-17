@@ -1,0 +1,10 @@
+algorithms:
+  pq_signature: CRYSTALS-Dilithium
+  pq_kem: CRYSTALS-Kyber
+keys:
+  patient_key_storage: secure_enclave_local
+  medical_key_rotation_days: 0
+  medical_key_ephemeral: true
+attestation:
+  device_measurement: required
+  signed_builds_only: true
